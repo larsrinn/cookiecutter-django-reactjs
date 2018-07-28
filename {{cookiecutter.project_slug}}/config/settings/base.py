@@ -74,7 +74,7 @@ DJANGO_APPS = [
 ]
 THIRD_PARTY_APPS = [
     'rest_framework',
-    { % if cookiecutter.js_task_runner != 'CreateReactApp' %}
+    {% if cookiecutter.js_task_runner != 'CreateReactApp' %}
     'crispy_forms',
     'allauth',  # todo check why allauth not with cra
     'allauth.account',

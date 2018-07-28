@@ -10,7 +10,7 @@ from rest_framework_jwt import views as jwt_views
 {% endif %}
 
 urlpatterns = [
-    { % if cookiecutter.js_task_runner != 'CreateReactApp' %}
+    {% if cookiecutter.js_task_runner != 'CreateReactApp' %}
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/",
