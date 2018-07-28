@@ -29,22 +29,22 @@ urlpatterns = [
     {% endif %}
     {% if cookiecutter.js_task_runner == 'CreateReactApp' %}
     path(settings.ADMIN_URL, admin.site.urls),
-    path("^app/", TemplateView.as_view(template_name="index.html")),
+    path("app/", TemplateView.as_view(template_name="index.html")),
 
     # REST framework
-    path("^api-auth/", include('rest_framework.urls', namespace='rest_framework')),
+    path("api-auth/", include('rest_framework.urls', namespace='rest_framework')),
 
     # OAUTH2: https://github.com/evonove/django-oauth-toolkit
-    path("^oauth/", include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path("oauth/", include('oauth2_provider.urls', namespace='oauth2_provider')),
 
     # REST AUTH
-    path("^rest-auth/", include('rest_auth.urls')),
-    path("^api-token-auth/", jwt_views.obtain_jwt_token),
-    path("^api-token-refresh/", jwt_views.refresh_jwt_token),
-    path("^api-token-verify/", jwt_views.verify_jwt_token),
+    path("rest-auth/", include('rest_auth.urls')),
+    path("api-token-auth/", jwt_views.obtain_jwt_token),
+    path("api-token-refresh/", jwt_views.refresh_jwt_token),
+    path("api-token-verify/", jwt_views.verify_jwt_token),
 
     # API documentation
-    path("^docs/", include_docs_urls(title='{{ cookiecutter.project_name }} API')),
+    path("docs/", include_docs_urls(title='{{ cookiecutter.project_name }} API')),
     {% endif %}
 
     # Your stuff: custom urls includes go here

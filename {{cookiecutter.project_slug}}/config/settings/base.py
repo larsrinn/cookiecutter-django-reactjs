@@ -302,7 +302,7 @@ STATICFILES_FINDERS += ['compressor.finders.CompressorFinder']
 # Your stuff...
 
 # Location of root django.contrib.admin URL, use {% raw %}{% url 'admin:index' %}{% endraw %}
-ADMIN_URL = r'^admin/'
+ADMIN_URL = r'admin/'
 
 {% if cookiecutter.js_task_runner == 'CreateReactApp' %}
 # todo check this needs to be updated

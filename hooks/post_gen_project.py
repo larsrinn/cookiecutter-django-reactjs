@@ -29,6 +29,7 @@ HINT = "\x1b[3;33m"
 SUCCESS = "\x1b[1;32m [SUCCESS]: "
 
 DEBUG_VALUE = "debug"
+PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 
 def remove_open_source_files():
