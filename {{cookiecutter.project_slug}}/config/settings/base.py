@@ -76,7 +76,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     {% if cookiecutter.js_task_runner != 'CreateReactApp' %}
     'crispy_forms',
-    'allauth',  # todo check why allauth not with cra
+    'allauth',
     'allauth.account',
     'allauth.socialaccount',
     {% endif %}
@@ -276,7 +276,6 @@ CELERYD_TASK_SOFT_TIME_LIMIT = 60
 {%- endif %}
 {% if cookiecutter.js_task_runner != 'CreateReactApp' %}
 # django-allauth
-# todo I think allauth is installed with cra
 # ------------------------------------------------------------------------------
 ACCOUNT_ALLOW_REGISTRATION = env.bool('DJANGO_ACCOUNT_ALLOW_REGISTRATION', True)
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
@@ -305,7 +304,6 @@ STATICFILES_FINDERS += ['compressor.finders.CompressorFinder']
 ADMIN_URL = r'admin/'
 
 {% if cookiecutter.js_task_runner == 'CreateReactApp' %}
-# todo check this needs to be updated
 # DJANGO REST FRAMEWORK
 # ------------------------------------------------------------------------------
 # http://www.django-rest-framework.org/
