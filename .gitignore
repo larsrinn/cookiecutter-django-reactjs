@@ -227,3 +227,8 @@ pip-selfcheck.json
 .idea/
 
 .pytest_cache/
+
+
+{% if cookiecutter.js_task_runner != 'CreateReactApp' %}
+frontend/webpack-stats.dev.json
+{% endif %}
