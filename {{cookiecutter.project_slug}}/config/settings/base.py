@@ -318,7 +318,7 @@ REST_FRAMEWORK = {
         # 'rest_framework.authentication.TokenAuthentication',
 
         # For Django-oauth. See: https://django-oauth-toolkit.readthedocs.io/en/latest/rest-framework/getting_started.html#step-1-minimal-setup  # NOQA
-        'oauth2_provider.ext.rest_framework.OAuth2Authentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
 
         # For REST-JWT. See: http://getblimp.github.io/django-rest-framework-jwt/#usage
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
