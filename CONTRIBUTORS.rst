@@ -89,6 +89,7 @@ Listed in alphabetical order.
   Delio Castillo           `@jangeador`_                 @jangeador
   Denis Orehovsky          `@apirobot`_
   Dónal Adams              `@epileptic-fish`_
+  Diane Chen               `@purplediane`_               @purplediane88
   Dong Huynh               `@trungdong`_
   Emanuel Calso            `@bloodpet`_                  @bloodpet
   Eraldo Energy            `@eraldo`_
@@ -102,6 +103,7 @@ Listed in alphabetical order.
   Hendrik Schneider        `@hendrikschneider`_
   Henrique G. G. Pereira   `@ikkebr`_
   Ian Lee                  `@IanLee1521`_
+  Irfan Ahmad              `@erfaan`_                    @erfaan
   Jan Van Bruggen          `@jvanbrug`_
   Jens Nilsson             `@phiberjenz`_
   Jimmy Gitonga            `@afrowave`_                  @afrowave
@@ -160,6 +162,7 @@ Listed in alphabetical order.
   Tom Atkins               `@knitatoms`_
   Tom Offermann
   Travis McNeill           `@Travistock`_               @tavistock_esq
+  Umair Ashraf             `@umrashrf`_                 @fabumair
   Vitaly Babiy
   Vivian Guillen           `@viviangb`_
   Will Farley              `@goldhand`_                 @g01dhand
@@ -204,6 +207,7 @@ Listed in alphabetical order.
 .. _@durkode: https://github.com/durkode
 .. _@epileptic-fish: https://gihub.com/epileptic-fish
 .. _@eraldo: https://github.com/eraldo
+.. _@erfaan: https://github.com/erfaan
 .. _@eriol: https://github.com/eriol
 .. _@eyadsibai: https://github.com/eyadsibai
 .. _@flyudvik: https://github.com/flyudvik
@@ -272,6 +276,8 @@ Listed in alphabetical order.
 .. _@afrowave: https://github.com/afrowave
 .. _@pchiquet: https://github.com/pchiquet
 .. _@delneg: https://github.com/delneg
+.. _@purplediane: https://github.com/purplediane
+.. _@umrashrf: https://github.com/umrashrf
 Special Thanks
 ~~~~~~~~~~~~~~
 
