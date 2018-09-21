@@ -215,7 +215,6 @@ tags
 [Ii]nclude
 [Ll]ib
 [Ll]ib64
-[Ll]ocal
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
@@ -226,3 +225,10 @@ pip-selfcheck.json
 # to 'run' anything within it since any particular cookiecutter
 # is declarative by nature.
 .idea/
+
+.pytest_cache/
+
+
+{% if cookiecutter.js_task_runner != 'CreateReactApp' %}
+frontend/webpack-stats.dev.json
+{% endif %}

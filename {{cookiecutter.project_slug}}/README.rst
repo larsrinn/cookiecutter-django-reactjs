@@ -37,7 +37,7 @@ Test coverage
 
 To run the tests, check your test coverage, and generate an HTML coverage report::
 
-    $ coverage run manage.py test
+    $ coverage run -m pytest
     $ coverage html
     $ open htmlcov/index.html
 
@@ -46,7 +46,7 @@ Running tests with py.test
 
 ::
 
-  $ py.test
+  $ pytest
 
 Live reloading and Sass CSS compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ The email server will exit when you exit the Grunt task on the CLI with Ctrl+C.
 {% endif %}
 .. _mailhog: https://github.com/mailhog/MailHog
 {% endif %}
-{% if cookiecutter.use_sentry_for_error_reporting == "y" %}
+{% if cookiecutter.use_sentry == "y" %}
 
 Sentry
 ^^^^^^
@@ -132,22 +132,21 @@ See detailed `cookiecutter-django Docker documentation`_.
 
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 {% endif %}
-{% if cookiecutter.use_elasticbeanstalk_experimental.lower() == 'y' %}
 
-Elastic Beanstalk
-~~~~~~~~~~~~~~~~~~
-
-See detailed `cookiecutter-django Elastic Beanstalk documentation`_.
-
-.. _`cookiecutter-django Elastic Beanstalk documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-elastic-beanstalk.html
-
-{% endif %}
 {% if cookiecutter.custom_bootstrap_compilation == "y" %}
 Custom Bootstrap Compilation
 ^^^^^^
 
-To get automatic Bootstrap recompilation with variables of your choice, install bootstrap sass (`bower install bootstrap-sass`) and tweak your variables in `static/sass/custom_bootstrap_vars`.
+The generated CSS is set up with automatic Bootstrap recompilation with variables of your choice.
+Bootstrap v4.1.1 is installed using npm and customised by tweaking your variables in ``static/sass/custom_bootstrap_vars``.
 
-(You can find a list of available variables [in the bootstrap-sass source](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss), or get explanations on them in the [Bootstrap docs](https://getbootstrap.com/customize/).)
+You can find a list of available variables `in the bootstrap source`_, or get explanations on them in the `Bootstrap docs`_.
+
+{% if cookiecutter.js_task_runner == 'Gulp' %}
+Bootstrap's javascript as well as its dependencies is concatenated into a single file: ``static/js/vendors.js``.
+{% endif %}
+
+.. _in the bootstrap source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+.. _Bootstrap docs: https://getbootstrap.com/docs/4.1/getting-started/theming/
 
 {% endif %}
